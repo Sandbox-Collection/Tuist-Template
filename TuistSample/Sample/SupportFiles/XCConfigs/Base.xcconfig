@@ -1,0 +1,12 @@
+// Bundle Version
+// Default Config
+
+CODE_SIGN_STYLE                             = Manual
+
+DEBUG_CODE_SIGN_IDENTITY              	    = Apple Development
+RELEASE_CODE_SIGN_IDENTITY                  = Apple Distribution
+
+// BUILD DEFINITION
+DEVELOPMENT_BUILD_DEFINITION                = DEV
+STAGING_BUILD_DEFINITION                    = STAGING
+PROD_BUILD_DEFINITION                       = PROD
