@@ -117,10 +117,10 @@ public extension Configuration {
     static func createModuleSchemes(frameworkName: String) -> [Scheme] {
         return [
             .scheme(
-                name: "Utils",
+                name: frameworkName,
                 shared: true,
-                buildAction: .buildAction(targets: [.target("Utils")]),
-                testAction: .targets(["Utils_test"], configuration: "DEV_Debug"),
+                buildAction: .buildAction(targets: [.target(frameworkName)]),
+                testAction: .targets(["\(frameworkName)_test"], configuration: "DEV_Debug"),
                 runAction: .runAction(configuration: "DEV_Debug")
                 )
         ]
