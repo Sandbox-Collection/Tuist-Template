@@ -167,7 +167,7 @@ extension Project {
                 bundleId: testBundleId,
                 deploymentTargets: deploymentTargets,
                 sources: testSource,
-                dependencies: dependencies + [.target(name: name)],
+                dependencies: [.target(name: name)],
                 settings: .settings(
                     configurations: testConfigurations
                 )
