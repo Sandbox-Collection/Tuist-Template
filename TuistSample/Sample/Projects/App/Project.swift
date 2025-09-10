@@ -100,6 +100,7 @@ let schemes = Configuration.createAppSchemes(appName: name)
 let rootProject = Project(
     name: name,
     options: .options(
+        automaticSchemesOptions: .disabled, // 자동 스킴 생성 제어하여 스킴 배열을 명시적으로 관리
         defaultKnownRegions: defaultKnownRegions,
         developmentRegion: defaultKnownRegions.first!
     ),

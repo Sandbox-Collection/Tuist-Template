@@ -98,7 +98,9 @@ extension Project {
                     defaultKnownRegions: defaultKnownRegions,
                     developmentRegion: defaultKnownRegions?.first
                 )
-                : .options(),
+                : .options(
+                    automaticSchemesOptions: .disabled
+                ),
                 packages: package,
                 settings: .settings(
                     configurations: configurations + testConfigurations,
